@@ -8,20 +8,20 @@
 <body>
   <h1>研修課題</h1>
   <p>時間計算ツール</p>
-    <%= form_with url: "/calculate_time", method: :post do %>
+  <%= form_with url: calculate_time_path, method: :post, local: true, data: { turbo: false } do %>
     <div>
-      <label for="time_input">時間入力 (4桁):</label>
-      <%= text_field_tag :time_input, "", id: "time_input", maxlength: 4, pattern: "[0-9]{4}" %>
+  <label for="time_input">時間入力 (hh:mm):</label>
+      <%= text_field_tag :time_input, "", id: "time_input", maxlength: 5, pattern: "[0-9]{2}:[0-9]{2}" %>
     </div>
 
     <div>
-      <label for="rounding_option">丸めの選択（5分単位）:</label>
+      <label for="rounding_option">丸めの選択:</label>
       <%= select_tag :rounding_option, options_for_select([['切り上げ', 'up'], ['切り捨て', 'down'], ['なし', 'none']]), id: "rounding_option" %>
     </div>
 
     <div>
-      <label for="rounding_unit">丸め単位 (0～60分):</label>
-      <%= number_field_tag :rounding_unit, 0, id: "rounding_unit", min: 0, max: 60 %>
+      <label for="rounding_unit">丸め単位:</label>
+      <%= select_tag :rounding_unit, options_for_select([5, 10, 15, 20, 30, 60]), id: "rounding_unit" %>
     </div>
 
     <div>
@@ -29,11 +29,9 @@
     </div>
   <% end %>
 
-  <h2>結果</h2>
   <div id="result">
-    <%= @result %>
+    <%= flash[:result] || "結果はここに表示されます" %>
   </div>
 
 </body>
 </html>
-

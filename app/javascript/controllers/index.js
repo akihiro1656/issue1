@@ -1,11 +1,20 @@
-// Import and register all your controllers from the importmap under controllers/*
+document.addEventListener("DOMContentLoaded", function() {
+  const timeInput = document.getElementById("time_input");
 
-import { application } from "controllers/application"
+  if (timeInput) {
+    timeInput.addEventListener("blur", function() {
+      let value = timeInput.value;
 
-// Eager load all controllers defined in the import map under controllers/**/*_controller
-import { eagerLoadControllersFrom } from "@hotwired/stimulus-loading"
-eagerLoadControllersFrom("controllers", application)
+      // 4桁の数字であることを確認
+      if (value.length === 4 && /^[0-9]{4}$/.test(value)) {
+        // 時間と分に分割
+        let hours = value.substring(0, 2);
+        let minutes = value.substring(2);
 
-// Lazy load controllers as they appear in the DOM (remember not to preload controllers in import map!)
-// import { lazyLoadControllersFrom } from "@hotwired/stimulus-loading"
-// lazyLoadControllersFrom("controllers", application)
+        // 新しい値を設定
+        timeInput.value = `${hours}:${minutes}`;
+      }
+    });
+  }
+});
+
