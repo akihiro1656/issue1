@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>研修課題</title>
+</head>
+<body>
+  <h1>研修課題</h1>
+  <p>時間計算ツール</p>
+    <%= form_with url: "/calculate_time", method: :post do %>
+    <div>
+      <label for="time_input">時間入力 (4桁):</label>
+      <%= text_field_tag :time_input, "", id: "time_input", maxlength: 4, pattern: "[0-9]{4}" %>
+    </div>
+
+    <div>
+      <label for="rounding_option">丸めの選択（5分単位）:</label>
+      <%= select_tag :rounding_option, options_for_select([['切り上げ', 'up'], ['切り捨て', 'down'], ['なし', 'none']]), id: "rounding_option" %>
+    </div>
+
+    <div>
+      <label for="rounding_unit">丸め単位 (0～60分):</label>
+      <%= number_field_tag :rounding_unit, 0, id: "rounding_unit", min: 0, max: 60 %>
+    </div>
+
+    <div>
+      <%= submit_tag "計算する" %>
+    </div>
+  <% end %>
+
+  <h2>結果</h2>
+  <div id="result">
+    <%= @result %>
+  </div>
+
+</body>
+</html>
+
