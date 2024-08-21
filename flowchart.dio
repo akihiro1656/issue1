@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="ckOPknyWNpe-K8J8IH9X" name="ページ1">
-        <mxGraphModel dx="1355" dy="2994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="941" dy="2834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -11,7 +11,7 @@
                     <mxGeometry x="104" y="-1251" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="終了" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="104" y="110" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="104" y="130" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="106" value="" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="14" target="33">
                     <mxGeometry relative="1" as="geometry"/>
@@ -19,7 +19,10 @@
                 <mxCell id="14" value="時間入力&lt;br&gt;[hh:mm]" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="94" y="-1150" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="89" value="" style="edgeStyle=none;html=1;" parent="1" source="28" target="62" edge="1">
+                <mxCell id="89" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="28" target="62">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="28" target="43">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="111" value="" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="28" target="43">
@@ -40,29 +43,32 @@
                 <mxCell id="36" value="丸め単位の選択&lt;br&gt;r_unit = [5，10，15，20，30, 60]" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="55" y="-941" width="196" height="60" as="geometry"/>
                 </mxCell>
+                <mxCell id="95" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="38" target="39">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="121" value="" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="38" target="39">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="38" value="時間変換&lt;br&gt;[mm] → [hh:mm]" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
-                    <mxGeometry x="94" y="-90" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="94" y="-70" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="39" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="122" value="" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="39" target="4">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="39" value="時間出力&lt;br&gt;[hh:mm]" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
-                    <mxGeometry x="94" y="10" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="118" value="" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="42" target="117">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="94" y="30" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="42" value="切り捨て処理[mm]&lt;br&gt;mm = m - r&amp;nbsp;" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
-                    <mxGeometry x="293" y="-390" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="293" y="-400" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="114" value="" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="43" target="99">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="43" value="商を計算[q]&lt;br&gt;q = m / r_unit&amp;nbsp;" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
-                    <mxGeometry x="94" y="-612.5" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="94" y="-620" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="51" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="280" y="-670" width="60" height="30" as="geometry"/>
@@ -73,7 +79,10 @@
                 <mxCell id="54" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="420" y="-740" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="90" value="" style="edgeStyle=none;html=1;" parent="1" source="62" target="79" edge="1">
+                <mxCell id="90" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="62" target="79">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="" style="edgeStyle=none;html=1;startArrow=none;" edge="1" parent="1" source="103" target="42">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="112" value="" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="62" target="102">
@@ -91,6 +100,15 @@
                         <mxPoint x="610" y="-380" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="125" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="79" target="39">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="710" y="60.925944010416664" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="720" y="-705"/>
+                            <mxPoint x="710" y="60"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="79" value="丸めなし" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="500" y="-735" width="120" height="60" as="geometry"/>
                 </mxCell>
@@ -104,40 +122,34 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="99" value="余りを計算[r]&lt;br&gt;r = m - ( q * r_unit)" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-                    <mxGeometry x="94" y="-497" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="93" y="-510" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="101" value="切り上げ処理[mm]&lt;br&gt;mm = m + ( r_unit - r )" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-                    <mxGeometry x="94" y="-390" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="94" y="-400" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="113" value="" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="102" target="103">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="102" value="商を計算[q]&lt;br&gt;q = m / r_unit" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-                    <mxGeometry x="293" y="-612" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="293" y="-620" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="116" value="" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;" edge="1" parent="1" source="103" target="42">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
+                <mxCell id="123" value="時間[h] + 1&lt;br&gt;分[m] - 60" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="94" y="-170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" value="分[mm]が60分超えるか" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="74.5" y="-300" width="157" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="128" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="-220" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="129" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry y="-300" width="60" height="30" as="geometry"/>
+                </mxCell>
                 <mxCell id="103" value="余りを計算[r]&lt;br&gt;r = m - ( q * r_unit)" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-                    <mxGeometry x="290" y="-497" width="126" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="119" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;entryX=1;entryY=0.5;" edge="1" parent="1" source="79" target="38">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="214" y="-240" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="560" y="-60"/>
-                        </Array>
-                        <mxPoint x="560" y="-675" as="sourcePoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="117" value="" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=default;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;strokeWidth=2;" vertex="1" parent="1">
-                    <mxGeometry x="343" y="-250" width="20" height="20" as="geometry"/>
-                </mxCell>
-                <mxCell id="123" value="h += 1&lt;br&gt;m -= 1" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-                    <mxGeometry x="94" y="-190" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="124" value="60分超えるか" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
-                    <mxGeometry x="82.5" y="-300" width="146" height="70" as="geometry"/>
+                    <mxGeometry x="290" y="-510" width="126" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
