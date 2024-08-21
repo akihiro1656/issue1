@@ -6,11 +6,10 @@
   <title>研修課題</title>
 </head>
 <body>
-  <h1>研修課題</h1>
-  <p>時間計算ツール</p>
+  <h1>研修課題(時間丸め計算ツール)</h1>
   <%= form_with url: calculate_time_path, method: :post, local: true, data: { turbo: false } do %>
     <div>
-  <label for="time_input">時間入力 (hh:mm):</label>
+  <label for="time_input">時間入力:</label>
       <%= text_field_tag :time_input, "", id: "time_input", maxlength: 5, pattern: "[0-9]{2}:[0-9]{2}" %>
     </div>
 
