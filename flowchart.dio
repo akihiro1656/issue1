@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="ckOPknyWNpe-K8J8IH9X" name="ページ1">
-        <mxGraphModel dx="492" dy="2710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="797" dy="2765" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -45,7 +45,7 @@
                         <mxPoint x="154" y="-30" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="118" value="" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="42" edge="1" target="136">
+                <mxCell id="118" value="" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="42" target="136" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="220" y="-60" as="targetPoint"/>
                         <Array as="points">
@@ -89,6 +89,14 @@
                         <mxPoint x="610" y="-380" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="142" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="79" target="137">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="560" y="68" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="560" y="60"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="79" value="丸めなし" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="500" y="-735" width="120" height="60" as="geometry"/>
                 </mxCell>
@@ -122,21 +130,12 @@
                 <mxCell id="103" value="余りを計算[r]&lt;br&gt;r = m - ( q * r_unit)" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="290" y="-497" width="126" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="119" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;entryX=1;entryY=0.5;" parent="1" source="79" target="137" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="214" y="-60" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="560" y="60"/>
-                        </Array>
-                        <mxPoint x="560" y="-675" as="sourcePoint"/>
-                    </mxGeometry>
-                </mxCell>
                 <mxCell id="128" value="" style="edgeStyle=none;html=1;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="154" y="-130" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="126" value="" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="124" edge="1" target="136">
+                <mxCell id="126" value="" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="124" target="136" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="310" y="-40" as="targetPoint"/>
                         <Array as="points">
